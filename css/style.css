@@ -1,0 +1,510 @@
+* , body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --main-color: #000000;
+    --bg-color: #191919; 
+    --main-text-color: #F8F9F9;
+    --links-hover: #2f2fa8;
+}
+body{
+    background-color: var(--bg-color);
+    color: var(--main-text-color);
+}
+/* artical */
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+.main-head{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+}
+.main-head h2{
+    margin: 10px 0;
+}
+.main-head p{
+    margin: 10px 0;
+    line-height: 22px;
+}
+/* ---------nav-------- */
+.toggle{
+    display: none;
+}
+.nav{
+    width: 100%;
+}
+.nav .container{
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav .container img{
+    width: 50px;
+    height: 50px;
+}
+.nav .container span{
+    margin-right: 50px;
+}
+.nav .container i{
+    margin-right: 50px;
+    cursor: pointer;
+    font-size: 20px;
+}
+/* ---------> end-nav-------- */
+/* ---------home--------- */
+.home{
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+.home img{
+    width: 350px;
+    z-index: 10;
+    transition: all ease 0.5s;
+}
+.home .ho:hover{
+    transform: translateX(20px);
+    cursor: pointer;
+}
+.home .cover{
+    width: 500px;
+    position: absolute;
+    left: 50px;
+}
+.home .home-text{
+    width: 600px;
+}
+.home .home-text p{
+    font-size: 25px;
+    text-transform: capitalize;
+}
+.home .home-text h1{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 10px 0;
+    font-size: 50px;
+}
+.home .home-text span{
+    font-weight: 700;
+    text-decoration: underline;
+    font-size: 20px;
+}
+.home .home-text span:hover{
+    cursor: pointer;
+    color: var(--links-hover);
+}
+/* ---------> end-home-------- */
+/* ------section-1----- */
+.section-1{
+    padding: 50px 0;
+}
+.section-1 .content-img{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.section-1 .content-img .img1{
+    width: calc(100% / 4 - 2%);
+    height: auto;
+    transition: all ease 0.5s;
+    
+}
+.section-1 .content-img .img1:hover{
+    box-shadow: 4px 28px 25px black;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.section-1 .content-img .img1 h3{
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    padding: 15px 0 0 0;
+    color: var(--main-color);
+}
+.section-1 .content-img .img1 img{
+    width: 100%;
+    height: 100%;
+}
+.section-1 .content-img .img1 span{
+    text-align: center;
+    color: var(--main-text-color);
+    transition: all ease 0.5s;
+    opacity: 0;
+}
+.section-1 .content-img .img1:hover span{
+    opacity: 1;
+}
+/* ------> end-section-1 <----- */
+/* ------section-2----- */
+.section-2{
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.section-2 .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 3);
+    background-color: #000000;
+    overflow: hidden;
+}
+.section-2 .box img{
+    width: 50%;
+    height: 250px;
+    transition: all ease 0.5s;
+}
+.section-2 .box img:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+}
+.m{
+    border-left: 3px solid white;
+}
+.section-2 .box .text-content{
+    width: 50%;
+}
+.section-2 .box .text-content p{
+    font-size: 15px;
+}
+.section-2 .box .text-content h4{
+    font-size: 25px;
+    margin: 10px 0;
+}
+.section-2 .box .text-content span{
+    text-decoration: underline;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+.section-2 .box .text-content span:hover{
+    color: var(--links-hover);
+}
+/* ------> end-section-2 <----- */
+/* ------section-3----- */
+.section-3{
+    padding: 50px 0;
+}
+.section-3 .filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-3 .filter button{
+    padding: 10px 25px;
+    border-radius: 20px;
+    margin-left: 10px;
+    color: #000000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+.section-3 .filter button:hover{
+    background-color: transparent;
+    color: white;
+}
+
+.section-3 .img-container{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.section-3 .img-container .img-cont{
+    width: calc(100% / 4 - 2%);
+    height: auto;
+    margin-top: 2%;
+    cursor: pointer;
+    position: relative;
+}
+.section-3 .img-container .img-cont::after{
+    content: "pricse: 350$";
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(0 0 0 / 50%);
+    transform: rotateY(90deg);
+    transition: all ease 0.5s;
+}
+.section-3 .img-container .img-cont:hover::after{
+    transform: rotateY(0deg);
+}
+.section-3 .img-container .img-cont h3{
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    padding: 15px 0 0 0;
+    color: black;
+}
+.section-3 .img-container .img-cont img{
+    width: 100%;
+    height: 100%;
+}
+/* ------> end-section-3 <----- */
+/* ------section-4----- */
+.section-4{
+    width: 100%;
+    padding: 30px 20px;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.section-4 .text-1{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+.section-4 .text-1 p{
+    color: gray;
+}
+.section-4 .text-1 h4{
+    margin: 15px 0;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.section-4 .text-1 p span{
+    font-size: 20px;
+    color: white;
+}
+.section-4 .text-2{
+    display: flex;
+    width: 45%;
+}
+.section-4 .text-2 .ml{
+    margin-left: 25px;
+}
+.section-4 .text-2 h3{
+    padding-top: 10px;
+    font-size: 23px;
+}
+.section-4 .text-2 p{
+    margin-left: 20px;
+    margin-top: 5px;
+    line-height: 25px;
+}
+.section-4 .text-3{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    background-color: #715339;
+}
+.section-4 .text-3 .text{
+    width: 30%;
+}
+.section-4 .text-3 .text h3{
+    font-size: 23px;
+}
+.section-4 .text-3 .text span{
+    text-decoration: underline;
+}
+.section-4 .text-3 .text span:hover{
+    color: var(--links-hover);
+    cursor: pointer;
+}
+.section-4 .text-3 img{
+    width: 65%;
+}
+/* ------> end-section-4 <----- */
+/* ------section-5----- */
+.section-5{
+    padding: 50px 0;
+    display: flex;
+}
+.section-5 .banar{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-5 .banar img{
+    width: 30%;
+}
+.section-5 .banar > div{
+    width: 25%;
+}
+.section-5 .banar h3{
+    color: #000000;
+    font-size: 30px;
+}
+.section-5 .banar h3 span{
+    color: #000000;
+    font-weight: 600;
+    font-size: 25px;
+    text-decoration: none;
+}
+.section-5 .banar span{
+    color: #000000;
+    font-weight: 600;
+    text-decoration: underline;
+    font-size: 20px;
+}
+.section-5 .banar span:hover{
+    color: var(--links-hover);
+    cursor: pointer;
+}
+/* ------> end-section-5 <----- */
+/* ------section-6----- */
+.section-6{
+    background-color: var(--main-color);
+    padding: 50px 0;
+    background: linear-gradient(rgba(0, 0, 0,0.7),rgba(0, 0, 0,0.7)),
+    url(../img/bg2.jpeg); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.section-6 .imgs{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.section-6 .imgs .img{
+    width: calc(100% / 4 - 2%);
+    transition: all ease 0.5s;
+    filter: drop-shadow(16px 16px 20px var(--bg-color));
+}
+.section-6 .imgs .img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    filter: drop-shadow(0 0 0 );
+}
+.section-6 .imgs .img h3{
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    padding: 15px 0 0 0;
+    color: black;
+}
+.section-6 .imgs .img img{
+    width: 100%;
+    height: 100%;
+}
+/* ------> end-section-6 <----- */
+/* ------footer----- */
+.footer{
+    background-color: var(--main-color);
+    padding: 50px 0;
+    margin: 100px 0 0 0;
+}
+.footer .container .foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer .container .foot  div{
+    width: calc(100% / 4 - 2%);
+}
+.footer .container .foot div h4{
+    font-size: 20px;
+    border-bottom: 2px solid grey;
+    padding-bottom: 10px;
+    width: fit-content;
+}
+.footer .container .foot div p{
+    margin: 20px 0;
+    line-height: 25px;
+    font-size: 15px;
+}
+.footer .container .foot div span{
+    font-size: 15px;
+    line-height: 25px;
+}
+.footer .container .foot .contact{
+    display: flex;
+    flex-direction: column;
+}
+.footer .container .foot .contact input{
+    margin: 30px 0;
+    padding: 10px 0;
+    color: white;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid grey;
+}
+.footer .container .foot .contact button{
+    width: fit-content;
+    padding: 5px 0;
+    color: white;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid grey;
+    font-size: 20px;
+    cursor: pointer;
+}
+.footer .container .foot .contact button:hover{
+    color: var(--links-hover);
+}
+/* ------> end-footer <----- */
+/* end */
+.end{
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.end p{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+/* -----------madia queries----------- */
+/* -------------mobile------------- */
+@media (max-width: 767px){
+
+}
+
+/* ----------small screen---------------- */
+@media (min-width: 767px) and (max-width: 992px){
+
+}
+
+/* ----------medium screen--------------------- */
+@media (min-width: 992px) and (max-width: 1200px){
+
+}
+
+/* ---------large screen */
+@media (min-width: 1200px){
+
+}

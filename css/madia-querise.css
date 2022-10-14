@@ -1,0 +1,293 @@
+
+
+
+
+/* -----------madia queries----------- */
+
+
+
+
+
+
+
+
+
+/* -------------mobile------------- */
+@media (max-width: 767px){
+    /* nav */
+    .toggle{
+        height: auto;
+        background-color: #362c35;
+        position: absolute;
+        right: 100px;
+        top: 50px;
+        padding: 0 10px;
+        display: block;
+        opacity: 0;
+        transition: all ease 0.5s;
+        z-index: 1;
+    }
+    .h:hover .toggle{
+        opacity: 1;
+    }
+    .toggle ul{
+        list-style: none;
+
+    }
+    .toggle ul li{
+        padding: 10px;
+    }
+    .toggle ul li a{
+        text-align: left;
+        display: block;
+        padding: 5px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 400;
+        border-bottom: 1px solid rebeccapurple;
+        transition: all ease 0.5s;
+    }
+    .toggle ul li a:hover{
+        transform: translateX(5px);
+        color: blueviolet;
+    }
+    .nav .container span{
+        display: none;
+    }
+    /* home */
+    .home{
+        text-align: center;
+    }
+    .home img{
+        display: none;
+    }
+    .home .home-text p{
+        font-size: 20px;
+        
+    }
+    .home .home-text h1{
+        font-size: 35px;
+    }
+    .home .home-text span{
+        font-size: 20px;
+    }
+    /* section-1 */
+    .main-head{
+        width: 80%;
+    }
+    .section-1 .content-img .img1{
+        width: calc(100% / 1 - 2%);
+    }
+    /* section-2 */
+    .section-2 .box{
+        width: calc(100% / 1)
+    }
+    .m{
+        border: none;
+        margin-top: 30px;
+    }
+    /* section-3 */
+    .section-3 .img-container .img-cont{
+        width: calc(100% / 1 - 2%);
+    }
+    /* section-4 */
+    .section-4 .text-1{
+        width: 100%;
+        align-items: center;
+    }
+    .section-4 .text-1 h4{
+        text-align: center;
+    }
+    .section-4 .text-2{
+        width: 100%;
+        margin: 40px 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-4 .text-2 .ml{
+        margin-left: 0;
+    }
+    .section-4 .text-3{
+        width: 100%;
+    }
+    .section-4 .text-3 .text{
+        width: 45%;
+    }
+    .section-4 .text-3 .text h3{
+        font-size: 35px;
+    }
+    .section-4 .text-3 img{
+        width: 55%;
+    }
+    /* section-5 */
+    .section-5 .banar h3{
+        font-size: 20px;
+    }
+    .section-5 .banar h3 span{
+        font-size: 20px;
+    }
+    .section-5 .banar span{
+        font-size: 15px;
+    }
+    /* section-6 */
+    .section-6 .imgs .img{
+        width: calc(100% / 1 - 2%);
+        margin-top: 15px;
+    }
+    /* footer */
+    .footer .container .foot{
+        flex-direction: column;
+    }
+    .footer .container .foot  div{
+        width: calc(100% / 1 - 2%);
+        text-align: center;
+        margin-top: 30px;
+    }
+    .footer .container .foot div h4{
+        display: inline-block;
+        text-align: center;
+    }
+    .footer .container .foot .contact{
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* ----------small screen---------------- */
+@media (min-width: 767px) and (max-width: 992px){
+
+    /* home */
+    .home{
+        text-align: center;
+        font-size: 30px;
+    }
+    .home img{
+        display: none;
+    }
+    /* section-1 */
+    .section-1 .content-img .img1{
+        width: calc(100% / 2 - 2%);
+    }
+     /* section-2 */
+     .section-2 .box{
+        width: calc(100% / 2)
+    }
+    .m{
+        border: none;
+    }
+    .section-2 .box:nth-child(2){
+        border-left: 3px solid white;
+    }
+    .section-2 :nth-child(3){
+        margin-top: 20px;
+    }
+    /* section-3 */
+    .section-3 .img-container .img-cont{
+        width: calc(100% / 2 - 2%);
+    }
+     /* section-4 */
+     .section-4 .text-1{
+        width: 100%;
+        text-align: center;
+    }
+    .section-4 .text-2{
+        width: 100%;
+        margin: 40px 0;
+        text-align: center;
+        justify-content: center;
+    }
+    .section-4 .text-3{
+        width: 100%;
+    }
+    .section-4 .text-3 .text{
+        width: 45%;
+    }
+    .section-4 .text-3 .text h3{
+        font-size: 40px;
+    }
+    .section-4 .text-3 img{
+        width: 55%;
+    }
+    /* section-6 */
+    .section-6 .imgs .img{
+        width: calc(100% / 2 - 2%);
+        margin-top: 15px;
+    }
+     /* footer */
+    .footer .container .foot  div{
+        width: calc(100% / 2 - 2%);
+    }
+    .footer .container .foot  div:nth-child(3),
+    .footer .container .foot  div:nth-child(4){
+        margin-top: 30px;
+    }
+}
+
+/* ----------medium screen--------------------- */
+@media (min-width: 992px) and (max-width: 1200px){
+
+    /* home */
+    .home .home-text{
+        width: 300px;
+    }
+    /* section-1 */
+    .section-1 .content-img .img1{
+        width: calc(100% / 3 - 2%);
+    }
+    /* section-2 */
+    .section-2 .box .text-content{
+        text-align: center;
+        width: 55%;
+    }
+    .section-2 .box img{
+        width: 45%;
+    }
+     /* section-3 */
+     .section-3 .img-container .img-cont{
+        width: calc(100% / 3 - 2%);
+    }
+    /* section-4 */
+    .section-4 .text-1{
+        width: 100%;
+        text-align: center;
+    }
+    .section-4 .text-2{
+        width: 100%;
+        margin: 40px 0;
+        justify-content: space-around;
+    }
+    .section-4 .text-3{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .section-4 .text-3 .text{
+        width: 40%;
+        
+    }
+    .section-4 .text-3 .text h3{
+        font-size: 40px;
+    }
+    .section-4 .text-3 img{
+        width: 40%;
+    }
+    /* section-6 */
+    .section-6 .imgs .img{
+        width: calc(100% / 3 - 2%);
+        margin-top: 15px;
+    }
+     /* footer */
+     .footer .container .foot  div{
+        width: calc(100% / 3 - 2%);
+    }
+    .footer .container .foot .contact{
+        margin-top: 20px;
+    }
+    
+}
+
+/* ---------large screen */
+@media (min-width: 1200px){
+
+}
