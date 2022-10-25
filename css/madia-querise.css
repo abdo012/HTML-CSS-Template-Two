@@ -123,13 +123,13 @@
     }
     /* section-5 */
     .section-5 .banar h3{
-        font-size: 20px;
+        font-size: 10px;
     }
     .section-5 .banar h3 span{
-        font-size: 20px;
+        font-size: 10px;
     }
     .section-5 .banar span{
-        font-size: 15px;
+        font-size: 10px;
     }
     /* section-6 */
     .section-6 .imgs .img{
@@ -152,6 +152,10 @@
     .footer .container .foot .contact{
         justify-content: center;
         align-items: center;
+    }
+    /* end */
+    .end p{
+        font-size: 15px;
     }
 }
 
